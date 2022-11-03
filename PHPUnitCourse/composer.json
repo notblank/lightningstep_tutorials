@@ -1,0 +1,16 @@
+{
+    "require-dev": {
+        "phpunit/phpunit": "^9",
+        "ramsey/composer-repl": "^1.4"
+    },
+    "config": {
+        "allow-plugins": {
+            "ramsey/composer-repl": true
+        }
+    },
+    "autoload" : {
+        "psr-4": {
+            "" : "src/"
+        }
+    }
+}

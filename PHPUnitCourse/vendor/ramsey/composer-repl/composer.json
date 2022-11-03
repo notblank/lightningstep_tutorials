@@ -1,0 +1,53 @@
+{
+    "name": "ramsey/composer-repl",
+    "description": "A REPL for PHP built into Composer.",
+    "license": "MIT",
+    "type": "composer-plugin",
+    "keywords": [
+        "repl",
+        "psysh",
+        "shell"
+    ],
+    "authors": [
+        {
+            "name": "Ben Ramsey",
+            "email": "ben@benramsey.com",
+            "homepage": "https://benramsey.com"
+        }
+    ],
+    "require": {
+        "php": "^7.4 || ^8",
+        "composer-plugin-api": "^2",
+        "ramsey/composer-repl-lib": "^1.1"
+    },
+    "require-dev": {
+        "captainhook/captainhook": "^5.10",
+        "captainhook/plugin-composer": "^5.3",
+        "ergebnis/composer-normalize": "^2.25",
+        "roave/security-advisories": "dev-latest"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "config": {
+        "allow-plugins": {
+            "captainhook/plugin-composer": true,
+            "ergebnis/composer-normalize": true
+        },
+        "sort-packages": true
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-main": "1.x-dev"
+        },
+        "captainhook": {
+            "force-install": true
+        },
+        "class": "Ramsey\\Dev\\Repl\\Composer\\ReplPlugin",
+        "ramsey/conventional-commits": {
+            "configFile": "conventional-commits.json"
+        },
+        "ramsey/devtools": {
+            "command-prefix": "dev"
+        }
+    }
+}

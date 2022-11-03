@@ -1,0 +1,15 @@
+<?xlm?>
+<phpunit 
+    colors="true" 
+    verbose="true"
+    bootstrap="vendor/autoload.php">
+    <testsuites>
+
+        <testsuite name="Tests Examples">
+            <!--Runs all files in /tests with name ending in Test-->
+            <!-- can add prefix or suffix cat-->
+            <directory>tests</directory>
+        </testsuite>
+
+    </testsuites>
+</phpunit>

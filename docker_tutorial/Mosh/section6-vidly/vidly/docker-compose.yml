@@ -1,0 +1,27 @@
+version: "3.8"
+
+services:
+
+  web:
+    build: ./frontend
+    ports:
+      - 3000:3000
+  api: 
+    build: ./backend
+    ports: 
+      - 3001:3001
+    environment:
+      DB_URL: mongodb://db/vidly
+    # wait for container
+    # command: ./wait-for db:27017 && migrate-mongo up && npm start
+    # create an entrypoint script
+    # command: ./docker-entrypoint.sh
+  db:
+    build: ./db 
+    ports:
+      - 27017:27017
+    volumes:
+      - vidly:/data/db
+
+volumes:
+  vidly:

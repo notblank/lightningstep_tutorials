@@ -113,3 +113,33 @@ select
     (select total_sales - avg_sales) as difference
     from clients c;
 
+-- update on join after summary
+use sql_store;
+show tables;
+
+show columns from customers;
+show columns from order_items;
+
+
+select order_id, product_id as min_prod
+            from order_items
+            order by order_id;
+
+select o.customer_id, o.order_id
+    from orders o;
+
+select o.customer_id, o.order_id, op.min_prod
+    from orders o
+    join 
+        (select order_id, min(product_id) as min_prod
+            from order_items
+            group by order_id ) op using (order_id);
+
+update orders o
+    join 
+        (select order_id, min(product_id) as min_prod
+            from order_items
+            group by order_id ) op using (order_id)
+    set order_id = min_prod + floor(rand() * 1000);
+
+select order_id from orders;

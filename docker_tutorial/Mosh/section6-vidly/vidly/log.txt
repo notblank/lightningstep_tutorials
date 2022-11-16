@@ -1,0 +1,266 @@
+#1 [vidly-web internal] load build definition from Dockerfile
+#1 transferring dockerfile: 217B done
+#1 DONE 0.0s
+
+#2 [vidly-db internal] load build definition from Dockerfile
+#2 transferring dockerfile: 64B done
+#2 DONE 0.0s
+
+#3 [vidly-api internal] load build definition from Dockerfile
+#3 transferring dockerfile: 218B done
+#3 DONE 0.0s
+
+#4 [vidly-api internal] load .dockerignore
+#4 transferring context: 186B done
+#4 DONE 0.0s
+
+#5 [vidly-db internal] load .dockerignore
+#5 transferring context: 2B done
+#5 DONE 0.0s
+
+#6 [vidly-web internal] load .dockerignore
+#6 transferring context: 186B done
+#6 DONE 0.0s
+
+#7 [vidly-db internal] load metadata for docker.io/library/mongo:4.0.28-xenial
+#7 ...
+
+#8 [auth] library/node:pull token for registry-1.docker.io
+#8 DONE 0.0s
+
+#9 [vidly-web internal] load metadata for docker.io/library/node:14.16.0-alpine3.13
+#9 ...
+
+#10 [auth] library/mongo:pull token for registry-1.docker.io
+#10 DONE 0.0s
+
+#7 [vidly-db internal] load metadata for docker.io/library/mongo:4.0.28-xenial
+#7 DONE 3.1s
+
+#9 [vidly-web internal] load metadata for docker.io/library/node:14.16.0-alpine3.13
+#9 DONE 3.3s
+
+#11 [vidly-web 1/6] FROM docker.io/library/node:14.16.0-alpine3.13@sha256:2c51dc462a02f15621e7486774d36d048a27225d581374b002b8477a79a59b4b
+#11 resolve docker.io/library/node:14.16.0-alpine3.13@sha256:2c51dc462a02f15621e7486774d36d048a27225d581374b002b8477a79a59b4b 0.0s done
+#11 ...
+
+#12 [vidly-web internal] load build context
+#12 transferring context: 675.92kB 0.0s done
+#12 DONE 0.0s
+
+#11 [vidly-web 1/6] FROM docker.io/library/node:14.16.0-alpine3.13@sha256:2c51dc462a02f15621e7486774d36d048a27225d581374b002b8477a79a59b4b
+#11 sha256:2c51dc462a02f15621e7486774d36d048a27225d581374b002b8477a79a59b4b 1.43kB / 1.43kB done
+#11 sha256:aaa14c316ef4221bace52357a6a9633238ed575dbb8ae372df959d7939ce6366 1.16kB / 1.16kB done
+#11 sha256:50bfd284aa0daf62e9fe0f08db4905a4f9eb9456ad5773e259ae18d31ec44f6e 6.73kB / 6.73kB done
+#11 sha256:2c51dc462a02f15621e7486774d36d048a27225d581374b002b8477a79a59b4b 1.43kB / 1.43kB done
+#11 sha256:aaa14c316ef4221bace52357a6a9633238ed575dbb8ae372df959d7939ce6366 1.16kB / 1.16kB done
+#11 sha256:50bfd284aa0daf62e9fe0f08db4905a4f9eb9456ad5773e259ae18d31ec44f6e 6.73kB / 6.73kB done
+#11 sha256:ca3cd42a7c9525f6ce3d64c1a70982613a8235f0cc057ec9244052921853ef15 0B / 2.81MB 4.5s
+#11 sha256:ca3cd42a7c9525f6ce3d64c1a70982613a8235f0cc057ec9244052921853ef15 1.05MB / 2.81MB 4.7s
+#11 sha256:ca3cd42a7c9525f6ce3d64c1a70982613a8235f0cc057ec9244052921853ef15 2.10MB / 2.81MB 5.0s
+#11 extracting sha256:ca3cd42a7c9525f6ce3d64c1a70982613a8235f0cc057ec9244052921853ef15
+#11 sha256:ca3cd42a7c9525f6ce3d64c1a70982613a8235f0cc057ec9244052921853ef15 2.81MB / 2.81MB 5.0s done
+#11 extracting sha256:ca3cd42a7c9525f6ce3d64c1a70982613a8235f0cc057ec9244052921853ef15 0.2s done
+#11 sha256:cf8dc363e30fa6d6a24fafe0c593ea0447c0fbe2ec3f1a7e6c68fa8836d1556c 0B / 35.91MB 5.1s
+#11 extracting sha256:ca3cd42a7c9525f6ce3d64c1a70982613a8235f0cc057ec9244052921853ef15 0.2s done
+#11 sha256:074ae49463c4f38ae0a7b325d47187e75bc59b07639d2e312d35b29aca1ee4e7 0B / 2.36MB 5.2s
+#11 sha256:cf8dc363e30fa6d6a24fafe0c593ea0447c0fbe2ec3f1a7e6c68fa8836d1556c 2.10MB / 35.91MB 5.6s
+#11 sha256:cf8dc363e30fa6d6a24fafe0c593ea0447c0fbe2ec3f1a7e6c68fa8836d1556c 4.19MB / 35.91MB 6.6s
+#11 sha256:074ae49463c4f38ae0a7b325d47187e75bc59b07639d2e312d35b29aca1ee4e7 1.05MB / 2.36MB 6.7s
+#11 sha256:cf8dc363e30fa6d6a24fafe0c593ea0447c0fbe2ec3f1a7e6c68fa8836d1556c 6.29MB / 35.91MB 6.8s
+#11 sha256:cf8dc363e30fa6d6a24fafe0c593ea0447c0fbe2ec3f1a7e6c68fa8836d1556c 8.39MB / 35.91MB 7.1s
+#11 sha256:074ae49463c4f38ae0a7b325d47187e75bc59b07639d2e312d35b29aca1ee4e7 2.36MB / 2.36MB 7.2s done
+#11 sha256:48fd78e4b5321d188146bc79a6b38f93ad9bc0958939a8ecbde58aebed044c7b 0B / 282B 7.3s
+#11 sha256:074ae49463c4f38ae0a7b325d47187e75bc59b07639d2e312d35b29aca1ee4e7 2.36MB / 2.36MB 7.2s done
+#11 sha256:48fd78e4b5321d188146bc79a6b38f93ad9bc0958939a8ecbde58aebed044c7b 282B / 282B 7.4s done
+#11 sha256:cf8dc363e30fa6d6a24fafe0c593ea0447c0fbe2ec3f1a7e6c68fa8836d1556c 11.53MB / 35.91MB 7.6s
+#11 ...
+
+#13 [vidly-db 1/1] FROM docker.io/library/mongo:4.0.28-xenial@sha256:4b4774811aa2bb39888c145504f09a45a115ce548757e545abcaa9fe7efc6010
+#13 resolve docker.io/library/mongo:4.0.28-xenial@sha256:4b4774811aa2bb39888c145504f09a45a115ce548757e545abcaa9fe7efc6010 0.0s done
+#13 sha256:fb1435e8841ce13f9ef0d245fe2ab73730d23f33f99cc43b3754248d36e70ae7 9.56kB / 9.56kB done
+#13 sha256:58690f9b18fca6469a14da4e212c96849469f9b1be6661d2342a4bf01774aa50 46.50MB / 46.50MB 3.7s done
+#13 sha256:da8ef40b9ecabc2679fe2419957220c0272a965c5cf7e0269fa1aeeb8c56f2e1 528B / 528B 1.4s done
+#13 sha256:4b4774811aa2bb39888c145504f09a45a115ce548757e545abcaa9fe7efc6010 549B / 549B done
+#13 sha256:b51569e7c50720acf6860327847fe342a1afbe148d24c529fb81df105e3eed01 857B / 857B 1.4s done
+#13 sha256:f68f07e0c0ee86b1d848a30b27e5573e9c960748a02f7c288e28282297117644 2.82kB / 2.82kB done
+#13 sha256:fb15d46c38dcd1ea0b1990006c3366ecd10c79d374f341687eb2cb23a2c8672e 170B / 170B 2.4s done
+#13 sha256:a0dc15b1682232043fedc59d010d2e4d0dc01dd52ff965c6b50e20a04411043e 2.08kB / 2.08kB 2.4s done
+#13 sha256:b7a3e92f19afbea3e9a1f5a9b6a92cc025bc1faf0edbba5c4d0dd8dee54198c6 2.91MB / 2.91MB 5.1s done
+#13 sha256:ed4a7b863fa12ffb32def38a07ba0124d502c79bba99ffd7811e5a152a73835a 1.31MB / 1.31MB 4.0s done
+#13 extracting sha256:58690f9b18fca6469a14da4e212c96849469f9b1be6661d2342a4bf01774aa50 1.9s done
+#13 sha256:a58b030ea8e456cf9c344d031bdae1d282ad16a6922f6fa23bf9b514cc046287 149B / 149B 4.0s done
+#13 sha256:6aa1ba699846bae225f5d977b867e9ef3dc5b762d61e2f34ede98ca09ca24c18 1.45kB / 1.45kB 4.1s done
+#13 sha256:ebc52c729dca5283b4bddf029aaaacbbc5301cf0713c3c843cfd0a412e0c6e6c 259B / 259B 4.3s done
+#13 sha256:52e8c440d4d63d0a8e456cec74f6473336e24aa9a3d36a310f38f6ccb7a8ad69 4.19MB / 105.90MB 8.0s
+#13 sha256:22b97876323d034e772b700d85fbd9087d4f901e98c639dcbcfcd47e76d87028 5.07kB / 5.07kB 4.4s done
+#13 extracting sha256:b51569e7c50720acf6860327847fe342a1afbe148d24c529fb81df105e3eed01 done
+#13 extracting sha256:da8ef40b9ecabc2679fe2419957220c0272a965c5cf7e0269fa1aeeb8c56f2e1 done
+#13 extracting sha256:fb15d46c38dcd1ea0b1990006c3366ecd10c79d374f341687eb2cb23a2c8672e done
+#13 extracting sha256:a0dc15b1682232043fedc59d010d2e4d0dc01dd52ff965c6b50e20a04411043e 0.0s done
+#13 extracting sha256:b7a3e92f19afbea3e9a1f5a9b6a92cc025bc1faf0edbba5c4d0dd8dee54198c6 0.1s done
+#13 extracting sha256:ed4a7b863fa12ffb32def38a07ba0124d502c79bba99ffd7811e5a152a73835a 0.1s done
+#13 extracting sha256:a58b030ea8e456cf9c344d031bdae1d282ad16a6922f6fa23bf9b514cc046287 done
+#13 extracting sha256:6aa1ba699846bae225f5d977b867e9ef3dc5b762d61e2f34ede98ca09ca24c18 done
+#13 extracting sha256:ebc52c729dca5283b4bddf029aaaacbbc5301cf0713c3c843cfd0a412e0c6e6c done
+#13 ...
+
+#14 [vidly-api internal] load build context
+#14 transferring context: 278.53kB 0.0s done
+#14 ...
+
+#13 [vidly-db 1/1] FROM docker.io/library/mongo:4.0.28-xenial@sha256:4b4774811aa2bb39888c145504f09a45a115ce548757e545abcaa9fe7efc6010
+#13 sha256:52e8c440d4d63d0a8e456cec74f6473336e24aa9a3d36a310f38f6ccb7a8ad69 10.49MB / 105.90MB 10.8s
+#13 sha256:52e8c440d4d63d0a8e456cec74f6473336e24aa9a3d36a310f38f6ccb7a8ad69 16.78MB / 105.90MB 12.0s
+#13 sha256:52e8c440d4d63d0a8e456cec74f6473336e24aa9a3d36a310f38f6ccb7a8ad69 24.12MB / 105.90MB 13.0s
+#13 sha256:52e8c440d4d63d0a8e456cec74f6473336e24aa9a3d36a310f38f6ccb7a8ad69 31.46MB / 105.90MB 13.6s
+#13 ...
+
+#11 [vidly-api 1/6] FROM docker.io/library/node:14.16.0-alpine3.13@sha256:2c51dc462a02f15621e7486774d36d048a27225d581374b002b8477a79a59b4b
+#11 sha256:cf8dc363e30fa6d6a24fafe0c593ea0447c0fbe2ec3f1a7e6c68fa8836d1556c 35.91MB / 35.91MB 12.1s done
+#11 extracting sha256:cf8dc363e30fa6d6a24fafe0c593ea0447c0fbe2ec3f1a7e6c68fa8836d1556c 1.5s done
+#11 extracting sha256:074ae49463c4f38ae0a7b325d47187e75bc59b07639d2e312d35b29aca1ee4e7 0.1s done
+#11 extracting sha256:48fd78e4b5321d188146bc79a6b38f93ad9bc0958939a8ecbde58aebed044c7b done
+#11 DONE 14.0s
+
+#13 [vidly-db 1/1] FROM docker.io/library/mongo:4.0.28-xenial@sha256:4b4774811aa2bb39888c145504f09a45a115ce548757e545abcaa9fe7efc6010
+#13 sha256:52e8c440d4d63d0a8e456cec74f6473336e24aa9a3d36a310f38f6ccb7a8ad69 39.85MB / 105.90MB 14.3s
+#13 sha256:52e8c440d4d63d0a8e456cec74f6473336e24aa9a3d36a310f38f6ccb7a8ad69 46.14MB / 105.90MB 14.7s
+#13 ...
+
+#15 [vidly-api 2/6] RUN addgroup app && adduser -S -G app app
+#15 DONE 1.0s
+
+#16 [vidly-api 3/6] WORKDIR /app
+#16 DONE 0.1s
+
+#17 [vidly-api 4/6] COPY package*.json ./
+#17 DONE 0.0s
+
+#13 [vidly-db 1/1] FROM docker.io/library/mongo:4.0.28-xenial@sha256:4b4774811aa2bb39888c145504f09a45a115ce548757e545abcaa9fe7efc6010
+#13 ...
+
+#18 [vidly-web 4/6] COPY package*.json ./
+#18 DONE 0.0s
+
+#13 [vidly-db 1/1] FROM docker.io/library/mongo:4.0.28-xenial@sha256:4b4774811aa2bb39888c145504f09a45a115ce548757e545abcaa9fe7efc6010
+#13 sha256:52e8c440d4d63d0a8e456cec74f6473336e24aa9a3d36a310f38f6ccb7a8ad69 52.43MB / 105.90MB 15.2s
+#13 sha256:52e8c440d4d63d0a8e456cec74f6473336e24aa9a3d36a310f38f6ccb7a8ad69 58.72MB / 105.90MB 15.7s
+#13 sha256:52e8c440d4d63d0a8e456cec74f6473336e24aa9a3d36a310f38f6ccb7a8ad69 65.01MB / 105.90MB 16.1s
+#13 sha256:52e8c440d4d63d0a8e456cec74f6473336e24aa9a3d36a310f38f6ccb7a8ad69 71.30MB / 105.90MB 16.6s
+#13 sha256:52e8c440d4d63d0a8e456cec74f6473336e24aa9a3d36a310f38f6ccb7a8ad69 77.59MB / 105.90MB 17.0s
+#13 sha256:52e8c440d4d63d0a8e456cec74f6473336e24aa9a3d36a310f38f6ccb7a8ad69 83.89MB / 105.90MB 18.0s
+#13 sha256:52e8c440d4d63d0a8e456cec74f6473336e24aa9a3d36a310f38f6ccb7a8ad69 90.18MB / 105.90MB 18.5s
+#13 sha256:52e8c440d4d63d0a8e456cec74f6473336e24aa9a3d36a310f38f6ccb7a8ad69 97.52MB / 105.90MB 19.1s
+#13 sha256:52e8c440d4d63d0a8e456cec74f6473336e24aa9a3d36a310f38f6ccb7a8ad69 104.86MB / 105.90MB 19.5s
+#13 sha256:52e8c440d4d63d0a8e456cec74f6473336e24aa9a3d36a310f38f6ccb7a8ad69 105.90MB / 105.90MB 19.7s done
+#13 extracting sha256:52e8c440d4d63d0a8e456cec74f6473336e24aa9a3d36a310f38f6ccb7a8ad69
+#13 extracting sha256:52e8c440d4d63d0a8e456cec74f6473336e24aa9a3d36a310f38f6ccb7a8ad69 3.9s done
+#13 extracting sha256:22b97876323d034e772b700d85fbd9087d4f901e98c639dcbcfcd47e76d87028
+#13 extracting sha256:22b97876323d034e772b700d85fbd9087d4f901e98c639dcbcfcd47e76d87028 done
+#13 ...
+
+#19 [vidly-db] exporting to image
+#19 exporting layers done
+#19 writing image sha256:89a8961dcc936fd33a5e762dd2db3cf035b5d1298e49d5291a3459213355923b done
+#19 naming to docker.io/library/vidly-db done
+#19 DONE 0.0s
+
+#13 [vidly-db 1/1] FROM docker.io/library/mongo:4.0.28-xenial@sha256:4b4774811aa2bb39888c145504f09a45a115ce548757e545abcaa9fe7efc6010
+#13 ...
+
+#20 [vidly-web 5/6] RUN npm install
+#20 ...
+
+#21 [vidly-api 5/6] RUN npm install
+#21 19.68 
+#21 19.68 > nodemon@2.0.7 postinstall /app/node_modules/nodemon
+#21 19.68 > node bin/postinstall || exit 0
+#21 19.68 
+#21 19.80 [32mLove nodemon? You can now support the project via the open collective:[22m[39m
+#21 19.80  > [96m[1mhttps://opencollective.com/nodemon/donate[0m
+#21 19.80 
+#21 21.09 npm WARN vidly-backend@1.0.0 No description
+#21 21.10 npm WARN vidly-backend@1.0.0 No repository field.
+#21 21.11 npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@2.3.1 (node_modules/fsevents):
+#21 21.11 npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@2.3.1: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+#21 21.11 
+#21 21.12 added 770 packages from 461 contributors and audited 771 packages in 20.295s
+#21 21.71 
+#21 21.71 35 packages are looking for funding
+#21 21.71   run `npm fund` for details
+#21 21.71 
+#21 21.71 found 121 vulnerabilities (39 moderate, 68 high, 14 critical)
+#21 21.71   run `npm audit fix` to fix them, or `npm audit` for details
+#21 DONE 23.2s
+
+#13 [vidly-db 1/1] FROM docker.io/library/mongo:4.0.28-xenial@sha256:4b4774811aa2bb39888c145504f09a45a115ce548757e545abcaa9fe7efc6010
+#13 ...
+
+#22 [vidly-api 6/6] COPY . .
+#22 DONE 0.1s
+
+#19 [vidly-api] exporting to image
+#19 exporting layers
+#19 exporting layers 1.7s done
+#19 writing image sha256:0342282843fb002cdf6e6761c8904d9366fb8d22e03a7afa968593a27f61695d done
+#19 naming to docker.io/library/vidly-api done
+#19 DONE 1.7s
+
+#14 [vidly-api internal] load build context
+#14 ...
+
+#20 [vidly-web 5/6] RUN npm install
+#20 40.80 
+#20 40.80 > core-js@2.6.12 postinstall /app/node_modules/babel-runtime/node_modules/core-js
+#20 40.80 > node -e "try{require('./postinstall')}catch(e){}"
+#20 40.80 
+#20 40.87 [96mThank you for using core-js ([94m https://github.com/zloirock/core-js [96m) for polyfilling JavaScript standard library![0m
+#20 40.87 
+#20 40.87 [96mThe project needs your help! Please consider supporting of core-js on Open Collective or Patreon: [0m
+#20 40.87 [96m>[94m https://opencollective.com/core-js [0m
+#20 40.87 [96m>[94m https://www.patreon.com/zloirock [0m
+#20 40.87 
+#20 40.87 [96mAlso, the author of core-js ([94m https://github.com/zloirock [96m) is looking for a good job -)[0m
+#20 40.87 
+#20 40.90 
+#20 40.90 > core-js@3.8.3 postinstall /app/node_modules/core-js
+#20 40.90 > node -e "try{require('./postinstall')}catch(e){}"
+#20 40.90 
+#20 40.97 
+#20 40.97 > core-js-pure@3.8.3 postinstall /app/node_modules/core-js-pure
+#20 40.97 > node -e "try{require('./postinstall')}catch(e){}"
+#20 40.97 
+#20 41.05 
+#20 41.05 > ejs@2.7.4 postinstall /app/node_modules/ejs
+#20 41.05 > node ./postinstall.js
+#20 41.05 
+#20 41.11 Thank you for installing [35mEJS[0m: built with the [32mJake[0m JavaScript build tool ([32mhttps://jakejs.com/[0m)
+#20 41.11 
+#20 43.45 npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.13 (node_modules/webpack-dev-server/node_modules/fsevents):
+#20 43.45 npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.13: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+#20 43.46 npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.13 (node_modules/watchpack-chokidar2/node_modules/fsevents):
+#20 43.46 npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.13: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+#20 43.47 npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@2.3.2 (node_modules/fsevents):
+#20 43.47 npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@2.3.2: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+#20 43.47 
+#20 43.48 added 1808 packages from 765 contributors and audited 1814 packages in 42.646s
+#20 44.92 
+#20 44.92 128 packages are looking for funding
+#20 44.92   run `npm fund` for details
+#20 44.92 
+#20 44.92 found 195 vulnerabilities (2 low, 81 moderate, 83 high, 29 critical)
+#20 44.92   run `npm audit fix` to fix them, or `npm audit` for details
+#20 DONE 45.6s
+
+#23 [vidly-web 6/6] COPY . .
+#23 DONE 0.0s
+
+#19 [vidly-web] exporting to image
+#19 exporting layers
+#19 exporting layers 3.7s done
+#19 writing image sha256:8151f0ed8c5594055597806c9fac434acf395602c797ceca11f534f86daea429 done
+#19 naming to docker.io/library/vidly-web done
+#19 DONE 5.4s
+
+#14 [vidly-api internal] load build context
